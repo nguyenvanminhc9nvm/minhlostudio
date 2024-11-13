@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:minhlostudio_page/home/engine_list.dart';
 import 'package:minhlostudio_page/home/game_list_widget.dart';
 import 'package:minhlostudio_page/home/social_media_widget.dart';
 import 'package:minhlostudio_page/l10n/l10n.dart';
@@ -95,9 +96,30 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         const SocialMediaWidget(),
+        SizedBox(height: 10.sp),
+        Padding(
+          padding: EdgeInsets.symmetric(vertical: 20.sp),
+          child: Text(
+            language.tools,
+            style: AppTextStyle.t20w700(Colors.white),
+          ),
+        ),
+        const EngineListWidget(),
+        SizedBox(height: 20.sp),
+        _buildInfo(),
         SizedBox(height: 100.sp,),
       ],
     );
   }
 
+  Widget _buildInfo() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text("Email: nguyenvanminh12081999@gmail.com", style: AppTextStyle.t20w700(),),
+        Text("Phone: 0977051541", style: AppTextStyle.t15w700(),),
+        Text("Address: Chuong My - Ha Noi", style: AppTextStyle.t15w700(),)
+      ],
+    );
+  }
 }

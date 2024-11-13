@@ -113,8 +113,8 @@ class _GameListWidgetState extends State<GameListWidget> {
                           child: TextButton.icon(
                             icon: Image.asset(
                               AppImages.icPlayStore,
-                              width: 30.sp,
-                              height: 30.sp,
+                              width: 20.sp,
+                              height: 20.sp,
                             ),
                             onPressed: () async {
                               if (appModel.linkPlayStore.isEmpty) {
@@ -127,7 +127,7 @@ class _GameListWidgetState extends State<GameListWidget> {
                             },
                             label: Text(
                               context.l10n.get,
-                              style: AppTextStyle.t8w700(),
+                              style: AppTextStyle.t8w700_underline(),
                             ),
                           ),
                         ),
@@ -136,8 +136,8 @@ class _GameListWidgetState extends State<GameListWidget> {
                           child: TextButton.icon(
                             icon: Image.asset(
                               AppImages.icAppStore,
-                              width: 30.sp,
-                              height: 30.sp,
+                              width: 20.sp,
+                              height: 20.sp,
                             ),
                             onPressed: () async {
                               if (appModel.linkAppStore.isEmpty) {
@@ -150,7 +150,7 @@ class _GameListWidgetState extends State<GameListWidget> {
                             },
                             label: Text(
                               context.l10n.get,
-                              style: AppTextStyle.t8w700(),
+                              style: AppTextStyle.t8w700_underline(),
                             ),
                           ),
                         ),

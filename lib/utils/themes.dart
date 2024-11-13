@@ -47,6 +47,15 @@ class AppTextStyle {
     );
   }
 
+  static TextStyle t8w700_underline([Color? color]) {
+    return common(
+      fontSize: 8.sp,
+      fontWeight: FontWeight.w700,
+      color: color,
+      decoration: TextDecoration.underline,
+    );
+  }
+
   static TextStyle t9w400([Color? color]) {
     return common(
       fontSize: 9.sp,

@@ -7,5 +7,6 @@
   "engine": "Engine",
   "download_count": "Download count",
   "get": "Download",
-  "view": "View"
+  "view": "View",
+  "tools": "Tools"
 }

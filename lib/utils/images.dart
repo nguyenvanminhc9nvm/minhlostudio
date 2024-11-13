@@ -9,4 +9,6 @@ class AppImages {
   static const icFbFanPage = "assets/images/icon_facebook_fanpage.png";
   static const icFbGroup = "assets/images/icon_facebook_group.png";
   static const icTiktok = "assets/images/icon_tiktok.png";
+  static const icUe5 = "assets/images/ic_ue5.png";
+  static const icFlutter = "assets/images/ic_flutter.png";
 }
