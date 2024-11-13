@@ -62,7 +62,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return ListView(
       padding: EdgeInsets.symmetric(horizontal: 50.sp),
       children: [
-        SizedBox(height: 10.sp,),
+        SizedBox(
+          height: 10.sp,
+        ),
         Text(
           language.minh_lo_studio,
           style: AppTextStyle.t50w400(Colors.white),
@@ -107,7 +109,9 @@ class _HomeScreenState extends State<HomeScreen> {
         const EngineListWidget(),
         SizedBox(height: 20.sp),
         _buildInfo(),
-        SizedBox(height: 100.sp,),
+        SizedBox(
+          height: 100.sp,
+        ),
       ],
     );
   }
@@ -116,9 +120,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text("Email: nguyenvanminh12081999@gmail.com", style: AppTextStyle.t20w700(),),
-        Text("Phone: 0977051541", style: AppTextStyle.t15w700(),),
-        Text("Address: Chuong My - Ha Noi", style: AppTextStyle.t15w700(),)
+        Text(
+          "Email: nguyenvanminh12081999@gmail.com",
+          style: AppTextStyle.t20w700(),
+        ),
+        Text(
+          "Phone: 0977051541",
+          style: AppTextStyle.t15w700(),
+        ),
+        Text(
+          "Address: Chuong My - Ha Noi",
+          style: AppTextStyle.t15w700(),
+        )
       ],
     );
   }
