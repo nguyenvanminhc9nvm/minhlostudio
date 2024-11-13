@@ -121,8 +121,11 @@ class _GameListWidgetState extends State<GameListWidget> {
                                 return;
                               }
                               if (await canLaunchUrl(
-                                  Uri.parse(appModel.linkPlayStore))) {
-                                await launchUrl(Uri.parse(appModel.linkPlayStore));
+                                Uri.parse(appModel.linkPlayStore),
+                              )) {
+                                await launchUrl(
+                                  Uri.parse(appModel.linkPlayStore),
+                                );
                               }
                             },
                             label: Text(
@@ -145,7 +148,8 @@ class _GameListWidgetState extends State<GameListWidget> {
                               }
                               if (await canLaunchUrl(
                                   Uri.parse(appModel.linkAppStore))) {
-                                await launchUrl(Uri.parse(appModel.linkAppStore));
+                                await launchUrl(
+                                    Uri.parse(appModel.linkAppStore));
                               }
                             },
                             label: Text(

@@ -14,9 +14,9 @@ class _EngineListWidgetState extends State<EngineListWidget> {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(child: Image.asset(AppImages.icFlutter)),
+        Expanded(child: Image.asset(AppImages.icFlutter),),
         SizedBox(width: 10.sp),
-        Expanded(child: Image.asset(AppImages.icUe5)),
+        Expanded(child: Image.asset(AppImages.icUe5),),
       ],
     );
   }
