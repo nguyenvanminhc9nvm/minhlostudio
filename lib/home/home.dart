@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
           style: AppTextStyle.t50w400(Colors.white),
         ),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20.0),
+          padding: EdgeInsets.symmetric(vertical: 20.sp),
           child: Text(
             language.about_me,
             style: AppTextStyle.t20w700(Colors.white),
@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         SizedBox(height: 10.sp),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20.0),
+          padding: EdgeInsets.symmetric(vertical: 20.sp),
           child: Text(
             language.game_list,
             style: AppTextStyle.t20w700(Colors.white),
@@ -91,7 +91,7 @@ class _HomeScreenState extends State<HomeScreen> {
         const GameListWidget(),
         SizedBox(height: 10.sp),
         Padding(
-          padding: const EdgeInsets.symmetric(vertical: 20.0),
+          padding: EdgeInsets.symmetric(vertical: 20.sp),
           child: Text(
             language.contact,
             style: AppTextStyle.t20w700(Colors.white),
