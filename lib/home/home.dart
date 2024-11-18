@@ -69,6 +69,50 @@ class _HomeScreenState extends State<HomeScreen> {
           language.minh_lo_studio,
           style: AppTextStyle.t50w400(Colors.white),
         ),
+        SizedBox(
+          height: 10.sp,
+        ),
+        Row(
+          children: [
+            const Spacer(),
+            Expanded(
+              flex: 2,
+              child: ElevatedButton(
+                onPressed: () {
+                  showAboutDialog(context: context, applicationName: "Sword And Shield", applicationLegalese: context.l10n.policy);
+                },
+                child: SizedBox(
+                  height: 50.sp,
+                  child: Center(
+                    child: Text(
+                      "Privacy policy",
+                      style: AppTextStyle.t15w700(Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const Spacer(),
+            Expanded(
+              flex: 2,
+              child: ElevatedButton(
+                onPressed: () {
+                  showAboutDialog(context: context, applicationName: "Sword And Shield", applicationLegalese: context.l10n.term_of_services);
+                },
+                child: SizedBox(
+                  height: 50.sp,
+                  child: Center(
+                    child: Text(
+                      "Term of services",
+                      style: AppTextStyle.t15w700(Colors.black),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            const Spacer(),
+          ],
+        ),
         Padding(
           padding: EdgeInsets.symmetric(vertical: 20.sp),
           child: Text(
